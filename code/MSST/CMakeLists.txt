@@ -2,11 +2,13 @@
 SET(MSST_HEADERS
     coordinates.hpp
     bar.hpp
+    suspension.hpp
     )
 
 SET(MSST_IMPL
     coordinates.cpp
     bar.cpp
+    suspension.cpp
     )
 
 ADD_LIBRARY(MSST_OBJECTS OBJECT 
@@ -14,11 +16,9 @@ ADD_LIBRARY(MSST_OBJECTS OBJECT
     ${MSST_IMPL}
     )
 
-
 TARGET_COMPILE_OPTIONS(
     MSST_OBJECTS PUBLIC "-std=c++20"
     )
-
 
 target_include_directories(MSST_OBJECTS
     PUBLIC
