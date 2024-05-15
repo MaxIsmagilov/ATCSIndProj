@@ -59,3 +59,11 @@ INSTALL( EXPORT AirfoilTools_TARGETS
 enable_testing()
 include(GoogleTest)
 include(CTest)
+
+ADD_EXECUTABLE(defs.t defs.t.cpp)
+TARGET_LINK_LIBRARIES(defs.t AirfoilTools::AirfoilTools GTest::gtest_main)
+gtest_discover_tests(defs.t)
+
+ADD_EXECUTABLE(point_maker.t point_maker.t.cpp)
+TARGET_LINK_LIBRARIES(point_maker.t AirfoilTools::AirfoilTools GTest::gtest_main)
+gtest_discover_tests(point_maker.t)
