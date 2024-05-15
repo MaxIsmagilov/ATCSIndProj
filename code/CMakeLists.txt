@@ -2,13 +2,13 @@
 cmake_minimum_required(VERSION 3.25)
 
 # CMake Version
-PROJECT( MSST
+PROJECT( AirfoilTools
     VERSION 0.0.0
     LANGUAGES C CXX
     )
 
 # Add subdirectories
-ADD_SUBDIRECTORY(MSST)
+ADD_SUBDIRECTORY(AirfoilTools)
 ADD_SUBDIRECTORY(ThirdParty)
 
 # Set C++ standard to C++20

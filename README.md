@@ -1,9 +1,13 @@
-# Max's Simple Suspension Tester
+# Airfoil generator
 
-## The plan
+## Overview
 
-I plan to expand this into a lightweight and useful suspension profiler using C++. It should work for all types of suspension, especially four-bar or double wishbone.
+This utility, developed by Max Ismagilov, turns a circle in the complex plane into an airfoil as defined by some policies.
+Here is a list of policies that will be used:
+ - [Joukowsky](docs/joukowsky.md)
+ - [Kármán-Trefftz](docs/karman-trefftz.md)
 
 ## Github directory
 
 The official github directory can be found [here](https://github.com/MaxIsmagilov/ATCSIndProj).
+
