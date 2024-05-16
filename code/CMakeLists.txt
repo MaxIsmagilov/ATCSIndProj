@@ -10,6 +10,7 @@ PROJECT( AirfoilTools
 # Add subdirectories
 ADD_SUBDIRECTORY(AirfoilTools)
 ADD_SUBDIRECTORY(ThirdParty)
+ADD_SUBDIRECTORY(Executables)
 
 # Set C++ standard to C++20
 set(CMAKE_CXX_STANDARD 20)
