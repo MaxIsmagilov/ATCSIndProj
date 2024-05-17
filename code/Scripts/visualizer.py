@@ -10,7 +10,6 @@ def make_plots():
     x = []
     y = []
     
-    
     with open('out.csv', newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=';')
         ct = 0
@@ -19,10 +18,6 @@ def make_plots():
             x.append(float(row[0]))
             y.append(float(row[1]))
             ct += 1
-            
-            
-    # import matplotlib.pyplot as plt
-    #plt.rcParams["figure.figsize"] = (12,15)
     
     ax = plt.subplot()
     

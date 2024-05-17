@@ -12,6 +12,7 @@ complex_vector karman_trefftz_transform(double dx, double dy, double pointcount,
 
   // make complex number b that is just 1
   complex_number b{1, 0};
+
   // initialize points for the airfoil
   complex_vector input = PointMaker::make_points(dx, dy, pointcount);
 
@@ -22,9 +23,7 @@ complex_vector karman_trefftz_transform(double dx, double dy, double pointcount,
   std::for_each(input.begin(), input.end(), [&](const complex_number &z) {
     // push back the transformed coordinates into the new vector
     complex_number top = pow(z + b, n) + pow(z - b, n);
-    // std::cout << top << '\n';
     complex_number bottom = pow(z + b, n) - pow(z - b, n);
-    // std::cout << bottom << '\n';
     v.push_back(b * n * top / bottom);
   });
 
