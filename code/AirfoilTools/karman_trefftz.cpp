@@ -11,6 +11,9 @@ complex_vector karman_trefftz_transform(double dx, double dy, double pointcount,
                                         double n) {
 
   // make complex number b that is just 1
+  // sometimes b is defined as a number other than 1, but in most cases it is 1
+  // to maintain a closed (where the ends are not open) airfoil in most
+  // conditions
   complex_number b{1, 0};
 
   // initialize points for the airfoil
