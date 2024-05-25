@@ -1,0 +1,8 @@
+ADD_EXECUTABLE(_test _test.cpp)
+TARGET_LINK_LIBRARIES(_test AirfoilTools::AirfoilTools)
+
+ADD_EXECUTABLE(generate_joukowsky generate_joukowsky.cpp)
+TARGET_LINK_LIBRARIES(generate_joukowsky AirfoilTools::AirfoilTools)
+
+ADD_EXECUTABLE(generate_karman_trefftz generate_karman_trefftz.cpp)
+TARGET_LINK_LIBRARIES(generate_karman_trefftz AirfoilTools::AirfoilTools)

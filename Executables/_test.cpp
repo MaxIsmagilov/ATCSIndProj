@@ -1,6 +1,6 @@
-#include "../AirfoilTools/joukowsky.hpp"
-#include "../AirfoilTools/karman_trefftz.hpp"
-#include "../AirfoilTools/point_maker.hpp"
+#include "../src/joukowsky.hpp"
+#include "../src/karman_trefftz.hpp"
+#include "../src/point_maker.hpp"
 
 #include <iostream>
 #include <numbers>
