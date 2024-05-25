@@ -1,6 +1,6 @@
 # Max Ismagilov's Airfoil Generator
 
-last updated May 17, 2024
+last updated May 24, 2024
 
 ## Overview
 
@@ -21,3 +21,13 @@ For a standalone demonstration, run `demo.sh`.
 ## Dependencies
 
 This project uses CMake to build the library and executables. CMake generates scripts for other buildsystems such as ninja or Make, which will also need to be installed. Make is recommended for beginners.
+
+## Future Plans
+
+It would be interesting to investigate the velocity field transforms and possibly other airfoil generation methods.
+
+## Additional Project Links
+
+My Checkers engine was also redone during this time. The link for this project is [on GitHub](https://github.com/MaxIsmagilov/BobCheckers).
+This engine beat oxidie_checkers (or ferricheck) on May 24, 2024. It has been both refactored, updated, and extensively tested!
+
